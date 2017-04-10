@@ -1,0 +1,9 @@
+<view wx:key="type" wx:for="{{list}}">
+  <view class="section__title">{{item.type}}</view>
+  <view class="flex-wrp" style="flex-direction:row;">
+  <view wx:for="{{item.kindleEbooks}}" wx:for-item="kindleEbooks" wx:key="id" class="flex-item bc_green">
+    <navigator wx:if="{{kindleEbooks.picName !=null }}" style="width:100%;height:100%" url="../detail/detail?bookName={{kindleEbooks.bookName}}" ><image style="background-color: #eeeeee;" src="/img/{{kindleEbooks.picName}}"></image></navigator>
+    <navigator wx:else style="width:100%;height:100%" url="../detail/detail?bookName={{kindleEbooks.bookName}}" ><image style="background-color: #eeeeee;" mode="{{item.mode}}" src="/img/mrfm.png"></image></navigator>
+  </view>
+  </view>
+</view>

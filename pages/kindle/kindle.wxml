@@ -1,0 +1,16 @@
+<view class="section font">
+  <view class="section__title">伽利略的苦恼</view>
+    <view class="section__auter">东野圭吾</view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">
+       <image style="background-color: #eeeeee;" mode="{{item.mode}}" src="https://weixin.myhomespace.cn/jll.jpg"></image>
+    </view>
+    <view class="text">内容简介:
+“人心也是一种科学，而且极为深奥。”连汤川学教授都烦恼的五个谜案。
+坠楼 是跳楼自杀还是他杀？
+操纵 无预警发生的火灾，恩师长子为何死于非命？
+密室 密闭房间里房客神秘消失，封闭的密室泄露不单纯的案情……
+指示 当科学遇上探测学，怎样看穿真相？扰乱 如何不遇到被害人就致人于死？
+</view>
+  </view>
+</view>

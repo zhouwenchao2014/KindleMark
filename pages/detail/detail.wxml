@@ -1,0 +1,14 @@
+<view class="section font" wx:for="{{list}}">
+  <view class="section__title">{{item.bookName}}</view>
+    <view class="section__auter">{{item.author}}</view>
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view class="flex-item bc_green">
+       <image wx:if="{{item.picName !=null }}" style="background-color: #eeeeee;" src="../../img/{{item.picName}}"></image>
+       <image wx:else style="background-color: #eeeeee;" src="/img/mrfm.png"></image>
+    </view>
+    <view class="text">{{item.summary}}</view>
+    <navigator url="/pages/kindle/kindle?title=navigate" hover-class="navigator-hover">订阅kindle</navigator>
+    <view id="footer">所有资源均来源于网络，如侵犯您的权益请联系我：sendkindleservice@163.com</view>
+  </view>
+ 
+</view>
