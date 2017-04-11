@@ -1,0 +1,9 @@
+<view wx:key="type">
+  <view class="flex-wrp" style="flex-direction:row;">
+  <view wx:for="{{list}}" wx:key="id" class="flex-item bc_green">
+    <navigator wx:if="{{item.picName !=null }}" style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}" ><image style="background-color: #eeeeee;" src="https://weixin.myhomespace.cn/img/{{item.picName}}"></image></navigator>
+    <navigator wx:else style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}" ><image style="background-color: #eeeeee;" src="https://weixin.myhomespace.cn/img/mrfm.png"></image></navigator>
+    <text class="bookName font">{{item.bookName}}</text>
+  </view>
+  </view>
+</view>

@@ -1,5 +1,5 @@
 <view class="section font" wx:for="{{list}}">
-  <view class="section__title">{{item.bookName}}</view>
+   <view class="section__title">{{item.bookName}}</view>
     <view class="section__auter">{{item.author}}</view>
   <view class="flex-wrp" style="flex-direction:row;">
     <view class="flex-item bc_green">

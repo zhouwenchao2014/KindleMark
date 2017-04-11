@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/detail/detail",
     "pages/kindle/kindle",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/type/type"
   ],
   "window":{
     "backgroundTextStyle":"light",
