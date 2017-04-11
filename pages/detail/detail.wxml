@@ -3,8 +3,8 @@
     <view class="section__auter">{{item.author}}</view>
   <view class="flex-wrp" style="flex-direction:row;">
     <view class="flex-item bc_green">
-       <image wx:if="{{item.picName !=null }}" style="background-color: #eeeeee;" src="../../img/{{item.picName}}"></image>
-       <image wx:else style="background-color: #eeeeee;" src="/img/mrfm.png"></image>
+       <image wx:if="{{item.picName !=null }}" style="background-color: #eeeeee;" src="https://weixin.myhomespace.cn/img/{{item.picName}}"></image>
+       <image wx:else style="background-color: #eeeeee;" src="https://weixin.myhomespace.cn/img/mrfm.png"></image>
     </view>
     <view class="text">{{item.summary}}</view>
     <navigator url="/pages/kindle/kindle?title=navigate" hover-class="navigator-hover">订阅kindle</navigator>
