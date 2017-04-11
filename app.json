@@ -1,11 +1,38 @@
 {
   "pages":[
+    "pages/dashboard/dashboard",
     "pages/home/home",
     "pages/detail/detail",
     "pages/kindle/kindle",
     "pages/logs/logs",
     "pages/type/type"
   ],
+  "tabBar": {  
+   "color": "#a9b7b7",  
+   "selectedColor": "#11cd6e",  
+   "borderStyle":"white",  
+   "list": [{  
+     "selectedIconPath": "img/home.png",  
+     "iconPath": "img/home.png",  
+     "pagePath": "pages/dashboard/dashboard",  
+     "text": "首页"  
+   }, {  
+     "selectedIconPath": "img/type.png",  
+     "iconPath": "img/type.png",  
+     "pagePath": "pages/home/home",  
+     "text": "分类"  
+   }, {  
+     "selectedIconPath": "img/rank.png",  
+     "iconPath": "img/rank.png",  
+     "pagePath": "pages/kindle/kindle",  
+     "text": "排行"  
+   },{  
+     "selectedIconPath": "img/help.png",  
+     "iconPath": "img/help.png",  
+     "pagePath": "pages/kindle/kindle",  
+     "text": "帮助"  
+   }]  
+ },  
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
