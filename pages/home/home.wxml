@@ -2,8 +2,10 @@
   <navigator url="/pages/type/type?type={{item.type}}" hover-class="navigator-hover"><view class="section__title">{{item.type}}</view></navigator>
   <view class="flex-wrp" style="flex-direction:row;">
   <view wx:for="{{item.kindleEbooks}}" wx:for-item="kindleEbooks" wx:key="id" class="flex-item bc_green">
-    <navigator wx:if="{{kindleEbooks.picName !=null }}" style="width:100%;height:100%" url="../detail/detail?bookName={{kindleEbooks.bookName}}" ><image style="background-color: #eeeeee;" src="https://weixin.myhomespace.cn/img/{{kindleEbooks.picName}}"></image></navigator>
-    <navigator wx:else style="width:100%;height:100%" url="../detail/detail?bookName={{kindleEbooks.bookName}}" ><image style="background-color: #eeeeee;" mode="{{item.mode}}" src="https://weixin.myhomespace.cn/img/mrfm.png"></image></navigator>
+    <navigator wx:if="{{kindleEbooks.picName !=null }}" style="width:100%;height:100%" url="../detail/detail?bookName={{kindleEbooks.bookName}}&id={{kindleEbooks.id}}" >
+    <image style="background-color: #eeeeee;" src="https://weixin.myhomespace.cn/img/{{kindleEbooks.picName}}"></image>
+    </navigator>
+    <navigator wx:else style="width:100%;height:100%" url="../detail/detail?bookName={{kindleEbooks.bookName}}&id={{kindleEbooks.id}}" ><image style="background-color: #eeeeee;" mode="{{item.mode}}" src="https://weixin.myhomespace.cn/img/mrfm.png"></image></navigator>
   </view>
   </view>
 </view>

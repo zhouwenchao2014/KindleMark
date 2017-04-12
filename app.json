@@ -6,32 +6,38 @@
     "pages/kindle/kindle",
     "pages/logs/logs",
     "pages/type/type",
-    "pages/help/help"
+    "pages/help/help",
+    "pages/user/user"
   ],
   "tabBar": {  
    "color": "#a9b7b7",  
    "selectedColor": "#11cd6e",  
    "borderStyle":"white",  
    "list": [{  
-     "selectedIconPath": "img/home.png",  
+     "selectedIconPath": "img/homeSelect.png",  
      "iconPath": "img/home.png",  
      "pagePath": "pages/dashboard/dashboard",  
      "text": "首页"  
    }, {  
-     "selectedIconPath": "img/type.png",  
+     "selectedIconPath": "img/typeSelect.png",  
      "iconPath": "img/type.png",  
      "pagePath": "pages/home/home",  
      "text": "分类"  
    }, {  
-     "selectedIconPath": "img/rank.png",  
+     "selectedIconPath": "img/rankSelect.png",  
      "iconPath": "img/rank.png",  
      "pagePath": "pages/kindle/kindle",  
      "text": "排行"  
    },{  
-     "selectedIconPath": "img/help.png",  
+     "selectedIconPath": "img/helpSelect.png",  
      "iconPath": "img/help.png",  
      "pagePath": "pages/help/help",  
      "text": "帮助"  
+   },{  
+     "selectedIconPath": "img/userSelect.png",  
+     "iconPath": "img/user.png",  
+     "pagePath": "pages/user/user",  
+     "text": "用户"  
    }]  
  },  
   "window":{

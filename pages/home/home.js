@@ -38,5 +38,7 @@ Page({
         userInfo:userInfo
       })
     })
+  },onReady:function(){
+    
   }
 })

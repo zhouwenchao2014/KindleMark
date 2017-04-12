@@ -27,6 +27,22 @@ Page({
         });
       }
     })
+    console.log("id:"+option.id)
+    wx.request({
+      url: 'https://weixin.myhomespace.cn/weixin/bookCount', //仅为示例，并非真实的接口地址
+      data: {
+        id: option.id,
+        readTimes:"1" 
+      },
+      header: {
+      'content-type': 'application/json'
+      },
+      success: function(res) {
+        console.log(res)
+      }
+    })
+
+    
 
     var that = this
     //调用应用实例的方法获取全局数据
