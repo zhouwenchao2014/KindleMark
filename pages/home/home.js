@@ -11,6 +11,9 @@ Page({
     })
   },
   onLoad: function () {
+    wx.setNavigationBarTitle({
+      title: '分类'
+    })
     console.log('KindleMark home')
     var that = this
     console.log('KindleMark requestBegin')

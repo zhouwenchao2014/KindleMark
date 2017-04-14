@@ -1,0 +1,22 @@
+<view class="banding kindleEmail footer">
+  <label class="label">KindleEmail:</label>
+  <input class="other" bindblur="emailInput" placeholder="输入你的KindleEmail" auto-focus/>
+</view>
+<view class="banding code footer">
+  <label class="label">是否有邀请码:</label>
+  <radio-group class="radio-group other" bindchange="radioChange">
+  <label class="radio">
+    <radio value="yes"/>是
+  </label>
+  <label class="radio">
+    <radio value="no" checked="checked"/>否
+  </label>
+</radio-group>
+</view>
+<view class="footer posi {{codeClass}}">
+    <label class="label">邀请码:</label>
+    <input class="other" bindblur="codeInput" placeholder="输入你的邀请码" auto-focus/>
+</view>
+<view class="botton">
+  <button type="primary" bindtap="bandingKindleEmail"> 绑定 </button>
+</view>

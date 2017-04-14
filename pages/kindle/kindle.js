@@ -11,6 +11,9 @@ Page({
     })
   },
   onLoad: function () {
+    wx.setNavigationBarTitle({
+      title: '排行'
+    })
     console.log('onLoad')
     var that = this
     //调用应用实例的方法获取全局数据

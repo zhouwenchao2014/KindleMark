@@ -9,8 +9,13 @@ Page({
     wx.navigateTo({
       url: '../logs/logs'
     })
+  },bindblur:function(e){
+
   },
   onLoad: function (option) {
+    wx.setNavigationBarTitle({
+      title: '主页'
+    })
     wx.login({
       success: function(res) {
         if (res.code) {
@@ -28,6 +33,7 @@ Page({
               },
               success: function(res) {
                 console.log(res.data)
+                 var openid=res.data.openid
                 if(res.data.isContain=="false"){
                     wx.showModal({
                       title: '未绑定',
@@ -36,7 +42,9 @@ Page({
                       confirmText:'去绑定',
                       success: function(res) {
                         if (res.confirm) {
-                          console.log('用户点击确定')
+                          wx.navigateTo({
+                            url: '../banding/banding?openid='+openid
+                          })
                         } else if (res.cancel) {
                           console.log('用户点击取消')
                         }

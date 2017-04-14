@@ -7,7 +7,8 @@
     "pages/logs/logs",
     "pages/type/type",
     "pages/help/help",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/banding/banding"
   ],
   "tabBar": {  
    "color": "#a9b7b7",  

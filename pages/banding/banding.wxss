@@ -1,0 +1,55 @@
+.banding{
+    width: 100%;
+    height: 40px;
+}
+.label{
+    position: absolute;
+    width: 35%;
+    text-align: right;
+}
+.other{
+    position: absolute;
+    width: 60%;
+    left: 40%;
+}
+.footer{
+margin-top:12px; 
+      float:right; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+      font-size:15px; 
+      color:#eb4f38;
+      line-height:25px;
+      letter-spacing:1px
+}
+.kindleEmail{
+    position: absolute;
+    top: 20%
+}
+.code{
+    position: absolute;
+    top: 20%;
+    margin-top: 60px;
+}
+.posi{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 20%;
+    margin-top: 100px;
+    display: none;
+}
+.codeShow{
+    display: block;
+}
+.codeHidden{
+    display: none;
+}
+.botton{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 20%;
+    margin-top: 160px;
+}
+.primary{
+    background-color: #eb4f38;
+}
