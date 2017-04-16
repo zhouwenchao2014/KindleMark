@@ -7,7 +7,8 @@
        <image wx:else style="background-color: #eeeeee;" src="https://weixin.myhomespace.cn/img/mrfm.png"></image>
     </view>
     <view class="text">{{item.summary}}</view>
-    <navigator url="/pages/kindle/kindle?title=navigate" hover-class="navigator-hover">订阅kindle</navigator>
+    <button bindtap="sendKindle">订阅至KINDLE</button>
+
     <view id="footer">所有资源均来源于网络，如侵犯您的权益请联系我：sendkindleservice@163.com</view>
   </view>
  

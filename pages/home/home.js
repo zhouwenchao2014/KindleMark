@@ -14,9 +14,7 @@ Page({
     wx.setNavigationBarTitle({
       title: '分类'
     })
-    console.log('KindleMark home')
     var that = this
-    console.log('KindleMark requestBegin')
     wx.request({
       url: 'https://weixin.myhomespace.cn/weixin/kindleHome?page=home', //仅为示例，并非真实的接口地址
       // data: {
@@ -26,7 +24,6 @@ Page({
       'content-type': 'application/json'
       },
       success: function(res) {
-        console.log("getApp")
         console.log(res.data)
         that.setData({
           list:res.data

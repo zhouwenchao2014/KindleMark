@@ -58,3 +58,8 @@ navigator{
     font-size: 9px;
     margin-top: 40px;
 }
+button{
+    width: 40%;
+    position: absolute;
+    left: 30%
+}

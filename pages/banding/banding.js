@@ -67,13 +67,27 @@ Page({
                   wx.showToast({
                     title: res.data.message,
                     icon: 'success',
-                    duration: 2000
+                    duration: 3000
                   })
-                   wx.navigateTo({
-                    url: '../dashboard/dashboard'
+                  setTimeout(function(){
+                    wx.switchTab({
+                      url: '../dashboard/dashboard'
+                    },3000)
+                  });
+                }else{
+                  wx.showModal({
+                    title: '警告',
+                    content: res.data.message,
+                    showCancel:false,
+                    success: function(res) {
+                      if (res.confirm) {
+                        console.log('用户点击确定')
+                      } else if (res.cancel) {
+                        console.log('用户点击取消')
+                      }
+                    }
                   })
                 }
-                
               }
           })
     }
