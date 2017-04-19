@@ -1,12 +1,84 @@
 <view class="newBook">
 <view class="newBook-title">新书速递</view>
-    <swiper indicator-dots="{{indicatorDots}}"
-  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-        <block wx:for="{{imgUrls}}">
-            <swiper-item>
-                <image src="{{item}}" class="slide-image" width="355" height="150"/>
-            </swiper-item>
-        </block>
-    </swiper>    
+    <swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="500">
+  <block wx:for="{{newlist}}">
+    <swiper-item>
+      <image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/>
+      <image wx:else src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/>
+    </swiper-item>
+  </block>
+</swiper>
 </view>
-<view class="newBook"></view>
+<view class="newBook">
+<view class="newBook-title">东野圭吾</view>
+    <swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="500">
+  <block wx:for="{{dygw}}">
+    <swiper-item>
+      <image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/>
+      <image wx:else src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view class="newBook">
+<view class="newBook-title">二十四史</view>
+    <swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="500">
+  <block wx:for="{{esss}}">
+    <swiper-item>
+      <image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/>
+      <image wx:else src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view class="newBook">
+<view class="newBook-title">历史人文</view>
+    <swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="500">
+  <block wx:for="{{lsrw}}">
+    <swiper-item>
+      <image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/>
+      <image wx:else src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view class="newBook">
+<view class="newBook-title">古典文学</view>
+    <swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="500">
+  <block wx:for="{{gdwx}}">
+    <swiper-item>
+      <image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/>
+      <image wx:else src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view class="newBook">
+<view class="newBook-title">外国文学</view>
+    <swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="500">
+  <block wx:for="{{wgwx}}">
+    <swiper-item>
+      <image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/>
+      <image wx:else src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view class="newBook">
+<view class="newBook-title">天天向上</view>
+    <swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="500">
+  <block wx:for="{{ttxs}}">
+    <swiper-item>
+      <image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/>
+      <image wx:else src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>

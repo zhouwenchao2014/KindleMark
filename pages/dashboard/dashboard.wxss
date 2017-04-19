@@ -1,0 +1,17 @@
+swiper{
+    height: 260px;
+    align-items: center
+}
+swiper-item{
+    align-items: center
+}
+.newBook-title{
+    text-align: center
+}
+image{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
+}

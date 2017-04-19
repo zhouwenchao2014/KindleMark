@@ -54,6 +54,32 @@ Page({
     });
 
     var that = this
+    wx.request({
+      url: 'https://weixin.myhomespace.cn/weixin/bookNew?psize=3&pstart=0',
+      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      // header: {}, // 设置请求的 header
+      success: function(res){
+        console.log(res.data)
+        var newlist =res.data.new;
+        var 东野圭吾 =res.data.东野圭吾;
+        var 二十四史 =res.data.二十四史;
+        var 历史人文 =res.data.历史人文;
+        var 古典文学 =res.data.古典文学;
+        var 外国文学 =res.data.外国文学;
+        var 天天向上 =res.data.天天向上;
+        that.setData({
+          newlist:newlist,
+          dygw:东野圭吾,
+          esss:二十四史,
+         lsrw:历史人文,
+         gdwx:古典文学,
+         wgwx:外国文学,
+         ttxs:天天向上
+        })
+      }
+    })
+
+    
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){
       //更新数据
