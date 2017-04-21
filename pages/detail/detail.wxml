@@ -7,7 +7,7 @@
        <image wx:else style="background-color: #eeeeee;" src="https://weixin.myhomespace.cn/img/mrfm.png"></image>
     </view>
     <view class="text">{{item.summary}}</view>
-    <button bindtap="sendKindle">订阅至KINDLE</button>
+    <button disabled="{{disabled}}" bindtap="sendKindle">订阅至KINDLE</button>
 
     <view id="footer">所有资源均来源于网络，如侵犯您的权益请联系我：sendkindleservice@163.com</view>
   </view>

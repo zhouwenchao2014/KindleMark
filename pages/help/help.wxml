@@ -1,4 +1,12 @@
-<view class="banding">绑定</view>
+<view class="content">
+<view class="banding">如何绑定并订阅KINDLE</view>
+<text>1.如何绑定kindle \n</text>
+<view id="kindle"><navigator url="../banding/banding">进入绑定页面</navigator></view>
+<text>2.添加认可邮箱 \n</text>
+<text>进入亚马逊:https://www.amazon.cn/mn/dcw/myx.html将sendkindleservice@163.com设置认可邮箱 \n</text>
 <view class="page">
     <image src="../../img/help1.png"></image>
 </view>
+<text>3.开始订阅KINDLE书籍 \n</text>
+</view>
+

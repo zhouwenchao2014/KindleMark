@@ -2,10 +2,10 @@
 <view class="newBook-title">新书速递</view>
     <swiper indicator-dots="true"
   autoplay="true" interval="5000" duration="500">
-  <block wx:for="{{newlist}}">
+  <block wx:key="new" wx:for="{{newlist}}">
     <swiper-item>
-      <image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/>
-      <image wx:else src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/>
+      <navigator wx:if="{{item.picName !=null }}" style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}&id={{item.id}}" ><image  src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/></navigator>
+      <navigator wx:else style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}&id={{item.id}}" ><image src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/></navigator>
     </swiper-item>
   </block>
 </swiper>
@@ -14,10 +14,10 @@
 <view class="newBook-title">东野圭吾</view>
     <swiper indicator-dots="true"
   autoplay="true" interval="5000" duration="500">
-  <block wx:for="{{dygw}}">
+  <block wx:key="new" wx:for="{{dygw}}">
     <swiper-item>
-      <image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/>
-      <image wx:else src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/>
+      <navigator wx:if="{{item.picName !=null }}" style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}&id={{item.id}}" ><image src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/></navigator>
+      <navigator wx:else style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}&id={{item.id}}" ><image src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/></navigator>
     </swiper-item>
   </block>
 </swiper>
@@ -26,10 +26,10 @@
 <view class="newBook-title">二十四史</view>
     <swiper indicator-dots="true"
   autoplay="true" interval="5000" duration="500">
-  <block wx:for="{{esss}}">
+  <block wx:key="new" wx:key="new" wx:for="{{esss}}">
     <swiper-item>
-      <image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/>
-      <image wx:else src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/>
+      <navigator wx:if="{{item.picName !=null }}" style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}&id={{item.id}}" ><image  src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/></navigator>
+      <navigator wx:else style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}&id={{item.id}}" ><image src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/></navigator>
     </swiper-item>
   </block>
 </swiper>
@@ -38,10 +38,10 @@
 <view class="newBook-title">历史人文</view>
     <swiper indicator-dots="true"
   autoplay="true" interval="5000" duration="500">
-  <block wx:for="{{lsrw}}">
+  <block wx:key="new" wx:for="{{lsrw}}">
     <swiper-item>
-      <image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/>
-      <image wx:else src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/>
+      <navigator wx:if="{{item.picName !=null }}" style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}&id={{item.id}}" ><image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/></navigator>
+      <navigator wx:else style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}&id={{item.id}}" ><image src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/></navigator>
     </swiper-item>
   </block>
 </swiper>
@@ -50,10 +50,10 @@
 <view class="newBook-title">古典文学</view>
     <swiper indicator-dots="true"
   autoplay="true" interval="5000" duration="500">
-  <block wx:for="{{gdwx}}">
+  <block wx:key="new" wx:for="{{gdwx}}">
     <swiper-item>
-      <image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/>
-      <image wx:else src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/>
+      <navigator wx:if="{{item.picName !=null }}" style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}&id={{item.id}}" ><image  src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/></navigator>
+      <navigator wx:else style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}&id={{item.id}}" ><image  src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/></navigator>
     </swiper-item>
   </block>
 </swiper>
@@ -62,10 +62,10 @@
 <view class="newBook-title">外国文学</view>
     <swiper indicator-dots="true"
   autoplay="true" interval="5000" duration="500">
-  <block wx:for="{{wgwx}}">
+  <block wx:key="new" wx:for="{{wgwx}}">
     <swiper-item>
-      <image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/>
-      <image wx:else src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/>
+      <navigator wx:if="{{item.picName !=null }}" style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}&id={{item.id}}" ><image  src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/></navigator>
+      <navigator wx:else style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}&id={{item.id}}" ><image src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/></navigator>
     </swiper-item>
   </block>
 </swiper>
@@ -74,10 +74,10 @@
 <view class="newBook-title">天天向上</view>
     <swiper indicator-dots="true"
   autoplay="true" interval="5000" duration="500">
-  <block wx:for="{{ttxs}}">
+  <block wx:key="new" wx:for="{{ttxs}}">
     <swiper-item>
-      <image wx:if="{{item.picName !=null }}" src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/>
-      <image wx:else src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/>
+       <navigator wx:if="{{item.picName !=null }}" style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}&id={{item.id}}" ><image  src="https://weixin.myhomespace.cn/img/{{item.picName}}" class="slide-image" width="355" height="500"/></navigator>
+       <navigator wx:else style="width:100%;height:100%" url="../detail/detail?bookName={{item.bookName}}&id={{item.id}}" ><image  src="https://weixin.myhomespace.cn/img/mrfm.png" class="slide-image" width="355" height="500"/></navigator>
     </swiper-item>
   </block>
 </swiper>

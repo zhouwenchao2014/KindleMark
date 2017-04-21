@@ -61,20 +61,20 @@ Page({
       success: function(res){
         console.log(res.data)
         var newlist =res.data.new;
-        var 东野圭吾 =res.data.东野圭吾;
-        var 二十四史 =res.data.二十四史;
-        var 历史人文 =res.data.历史人文;
-        var 古典文学 =res.data.古典文学;
-        var 外国文学 =res.data.外国文学;
-        var 天天向上 =res.data.天天向上;
+        var dygw =res.data.东野圭吾;
+        var esss =res.data.二十四史;
+        var lsrw =res.data.历史人文;
+        var gdwx =res.data.古典文学;
+        var wgwx =res.data.外国文学;
+        var ttxs =res.data.天天向上;
         that.setData({
           newlist:newlist,
-          dygw:东野圭吾,
-          esss:二十四史,
-         lsrw:历史人文,
-         gdwx:古典文学,
-         wgwx:外国文学,
-         ttxs:天天向上
+          dygw:dygw,
+          esss:esss,
+         lsrw:lsrw,
+         gdwx:gdwx,
+         wgwx:wgwx,
+         ttxs:ttxs
         })
       }
     })

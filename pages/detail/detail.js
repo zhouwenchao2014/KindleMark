@@ -12,6 +12,11 @@ Page({
   },sendKindle:function(){
     var openid=getApp().globalData.openid;
     var bookName=this.data.bookName;
+      var that = this
+      that.setData({
+        disabled:true
+      })
+    
     //订阅kindle
     wx.request({
       url: 'https://weixin.myhomespace.cn/weixin/kindleSend',
@@ -30,12 +35,20 @@ Page({
             icon: 'success',
             duration: 2000
           })
+          that.setData({
+            disabled:false
+          })
+        
         }else{
           wx.showToast({
             title: res.data.message,
             icon: 'success',
             duration: 2000
           })
+           that.setData({
+            disabled:false
+          })
+        
         }
       }
     })

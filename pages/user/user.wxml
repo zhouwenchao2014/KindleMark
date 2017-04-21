@@ -3,4 +3,24 @@
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
+  <view class="kindleEmail">
+    <text>绑定的KINDLEEMAIL</text>
+    <view class="one" wx:key="new" wx:for="{{kindleEmail}}">
+      <text class="emailText">{{item.kindleEmail}}</text><switch id="{{item.kindleEmail}}"  checked="{{item.isMasterEmail==1?true:false}}" bindchange="switch1Change"/>
+    </view>
+  </view>
+</view>
+<view class="info">
+   <view class="send" >
+    <text>已订阅的书籍</text>
+    <view class="one" >
+      <navigator class="tag" wx:key="new" wx:for="{{send}}" url="../detail/detail?bookName={{item.bookName}}&id={{item.bookId}}" ><text >{{item.bookName}}</text></navigator>
+    </view>
+  </view>
+  <view class="read" >
+    <text>已阅览的书籍</text>
+    <view class="one" >
+      <navigator class="tag" wx:key="new" wx:for="{{read}}" url="../detail/detail?bookName={{item.bookName}}&id={{item.bookId}}" ><text >{{item.bookName}}</text></navigator>
+    </view>
+  </view>
 </view>
